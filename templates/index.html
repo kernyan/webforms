@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1> {% block title %} Circle intersection tool {% endblock %} </h1>
+
+  <form method="post">
+    <div class="form-group">
+      <label for="r0">Coord r0: x, y, r</label>
+      <input type="text" name="r0" class="form-control" value="{{ request.form['r0'] }}"></input>
+    </div>
+    <div class="form-group">
+      <label for="r1">Coord r1: x, y, r</label>
+      <input type="text" name="r1" class="form-control" value="{{ request.form['r1'] }}"></input>
+    </div>
+    <div class="form-group">
+      <label for="r2">Coord r2: x, y, r</label>
+      <input type="text" name="r2" class="form-control" value="{{ request.form['r2'] }}"></input>
+    </div>
+    <div class="form-group">
+      <label for="r3">Coord r3: x, y, r</label>
+      <input type="text" name="r3" class="form-control" value="{{ request.form['r3'] }}"></input>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  <div>
+    {{ imgf['image1'] | safe }}
+  </div>
+{% endblock %}
