@@ -13,7 +13,7 @@ def parse(r0,r1,r2,r3):
         tokens = rx.split(',')
         try:
             if len(tokens) == 3:
-                return tuple(map(int, tokens))
+                return tuple(map(float, tokens))
             return None
         except:
             return None
