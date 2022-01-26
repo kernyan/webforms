@@ -39,8 +39,6 @@ def index():
     imageV = {'image1':''}
     if config:
         s = plot_svg(config)
-        print('here')
-        print(s)
         imageV['image1'] = imgtemp % to_svg(s)
     return render_template('index.html', imgf=imageV)
 

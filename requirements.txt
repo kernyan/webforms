@@ -1,6 +1,6 @@
 wheel
 matplotlib
-pip==20.0.2
+pip==21.1
 setuptools==21.2.1
 flask
 flask-table
